@@ -8,7 +8,7 @@ import SpecialOffer from '../components/home/SpecialOffer';
 import Review from '../components/home/Review';
 
 import HeroSection from "../components/home/HeroSection";
-const HomeComponent = () => {
+const HomeComponent = ({tour}) => {
   useEffect(()=>{
      window.scrollTo({
             top:0,
@@ -19,7 +19,7 @@ const HomeComponent = () => {
     <div>
       <HeroSection />
       <Choose />
-      <TrendingTour />
+      <TrendingTour tour={tour} />
       <TopDestination />
       <Review />
       <ClientsTestimonial />
