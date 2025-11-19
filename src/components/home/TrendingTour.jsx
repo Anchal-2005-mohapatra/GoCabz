@@ -72,7 +72,7 @@ useEffect(()=>{
 
                 <div className='py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {tour.map((item) => (
-                        <div className='' key={item.id} data-aos="flip-right" >
+                        <div className='' key={item.id} data-aos="flip-right" onClick={()=>navigate(`/view-details/${item.id}`)}>
                             <img src={item.img} alt="" className='rounded' />
                             <div className='rounded space-y-4'>
                                 <p className='pt-2 font-medium text-lg'>{item.place}</p>

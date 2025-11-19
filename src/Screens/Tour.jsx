@@ -16,6 +16,7 @@ import SpecialOffer from "../components/home/SpecialOffer";
 const destination = [
     {
         id: 1,
+  
         img: odisha,
         name: "Konark Temple",
         place: "Puri"
