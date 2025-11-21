@@ -24,11 +24,11 @@ const toggleModel = ()=>{
     return (
         <div className='sticky top-0 bg-white shadow-lg z-50 w-full '>
             <div className=' block md:hidden lg:hidden xl:hidden'>
-                <div className='flex items-center justify-between px-6 pb-1'>
-                    <img src={logo} alt="" className='bg-cover bg-center h-16 md:h-20 ' />
+                <NavLink to ="/" className='flex items-center justify-between px-6 pb-1'>
+                   <img src={logo} alt="" className='bg-cover bg-center h-16 md:h-20 ' />
                     <GiHamburgerMenu size={20} onClick={() => setMenu(true)} />
 
-                </div>
+                </NavLink> 
                 <Sidebar menu={menu}  onClose={() => setMenu(false)} navigate={navigate} />
 
             </div>
@@ -52,7 +52,8 @@ const toggleModel = ()=>{
             {/* for large screen. */}
             <div className='hidden md:flex lg:flex xl:flex px-6 md:px-8 lg:px-9  justify-between items-center w-full'>
 
-                <div> <img src={logo} alt="" className='bg-cover bg-center h-16 md:h-20 pb-2 ' /></div>
+                 <NavLink to= "/" >
+                   <img src={logo} alt="" className='bg-cover bg-center h-16 md:h-20 pb-2 ' /></NavLink>
                 <div>
                     <ul className='flex items-center gap-5 md:gap-6 lg:gap-8'>
                         <NavLink to="/" className={({ isActive }) =>

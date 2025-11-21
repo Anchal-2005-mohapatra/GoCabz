@@ -16,7 +16,7 @@ const Enquire = ({ open, onClose }) => {
   return (
     <div className='fixed  inset-0 bg-black/40 backdrop-blur-sm flex ' onClick={onClose}>
       <div className='flex w-full  items-center justify-center'>
-        <div className='bg-[#FFFBEF] p-2 flex   ' data-aos="fade-in" >
+        <div className='bg-[#FFFBEF] p-2 flex   '  >
           <div className='relative w-full h-[50%] p-6 inset-0 '>
             <div className='text-right'>
               <button className='' onClick={onClose}><RxCross2 size={20} className=''/></button>
@@ -58,7 +58,7 @@ const Enquire = ({ open, onClose }) => {
               <div className='px-3 py-2 border-r border-[#949292]'>
                 <img src={calender} alt="" className='bg-cover bg-center h-7' />
               </div>
-              <input type="date" placeholder='' className='outline-none w-[50%]  px-2 md:px-5 lg:px-6' />
+              <input type="date" placeholder='' className='outline-none w-[80%]  px-2 md:px-5 lg:px-6' />
             </div>
             <div className='border border-[#949292] flex bg-white'>
               <div className='px-3 py-2 border-r border-[#949292]'>
@@ -75,8 +75,6 @@ const Enquire = ({ open, onClose }) => {
             <div className='w-[50%] text-center rounded text-white py-2 px-3 bg-[#FCC101]'><button className=''>Submit</button>
             </div>
             </div>
-
-
           </div>
         </div>
       </div>
